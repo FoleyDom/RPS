@@ -80,7 +80,6 @@ const server = http.createServer((req, res) => {
     })
   }
   else if(page =='/media/rock.png'){
-    console.log('we want rock!')
     fs.readFile('media/rock.png', function(err, data){
       res.writeHead(200, {'Content-Type': 'image'});
       res.write(data);
